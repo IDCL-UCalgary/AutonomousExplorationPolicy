@@ -1,5 +1,6 @@
 import tensorflow as tf
 from tensorflow.keras.layers import ( Input, Conv2D, Dense, Flatten )
+from tensorflow.keras.layers import InputLayer
 tf.keras.backend.set_floatx('float64')
 #import matplotlib.pyplot as plt 
 import numpy as np
