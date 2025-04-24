@@ -14,7 +14,7 @@ def cells_in_lidar(lidarrange,map_width, map_height):
 # summarize all variables in one or two lines 
 angle_step = 0.008
 meas_phi = np.arange(-np.pi,np.pi,angle_step)
-rmax , aplha , beta  = 12 , 1 , 0.008   
+rmax , alpha , beta  = 12 , 1 , 0.008   
 map_width , map_height = 50 , 50
 map_size = (map_width,map_height)
 num_obstacles = 10
