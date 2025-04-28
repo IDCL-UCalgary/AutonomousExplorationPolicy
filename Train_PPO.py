@@ -6,7 +6,7 @@ from tqdm import tqdm
 import argparse
 
 # Import the PPO agent
-from PPO import PPOAgent
+from agents.PPO import PPOAgent
 
 # Set TensorFlow to use float64 by default
 tf.keras.backend.set_floatx('float64')

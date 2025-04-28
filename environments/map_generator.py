@@ -1,5 +1,5 @@
 import numpy as np
-from config import map_height, map_width, num_obstacles, obstacle_size
+from environments.config import map_height, map_width, num_obstacles, obstacle_size
 class Map_Generator:
     def __init__(self, seed, width = map_width, height = map_height , numb_of_obstacles = num_obstacles, obs_size = obstacle_size, margins=(2, 2)):
         self.width = width

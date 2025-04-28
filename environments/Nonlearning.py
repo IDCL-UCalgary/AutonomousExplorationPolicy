@@ -1,3 +1,6 @@
+# Moha Note : This should be updated! Exploration class should be created and decoupled from the simulation environment
+
+
 import pandas as pd
 # import matplotlib.pyplot as plt
 import numpy as np

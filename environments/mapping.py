@@ -2,34 +2,8 @@ import numpy as np
 import math
 import numpy as np
 
-from config import (alpha, beta, map_height, map_width, meas_phi,
+from environments.config import (alpha, beta, map_height, map_width, meas_phi,
                     rmax)
-
-
-# def inverse_measurement(number_rows,number_columns,x,y,theta,meas_phi,meas_r,rmax,alpha,beta):
-#   m = np.zeros((map_height,map_width))
-#   for i in range(number_rows):
-#     for j in range(number_columns):
-#       r = np.sqrt((i-x)**2 + (j-y)**2)
-#       phi = (math.atan2(j-y,i-x)- theta + np.pi) % (2*np.pi) - np.pi
-#       k = np.argmin(np.abs(np.subtract(phi,meas_phi)))
-#       if (r > min(rmax, meas_r[k] + alpha/2.0)) or (abs(phi-meas_phi[k])> beta/2.0) :
-#         m[i,j] = 0.5
-#       elif (meas_r[k] < rmax) and (abs(r-meas_r[k])<alpha/2.0):
-#         m[i,j] = 0.8
-#       elif r < meas_r[k]:
-#         m[i,j] = 0.2
-#   return m 
-
-# def map_update(x,Llocal,localmap,map_matrix):
-#   meas_r = get_range(map_matrix , x, meas_phi ,rmax)
-#   invmod = inverse_measurement(map_height,map_width, x[0],x[1],x[2],meas_phi,meas_r,rmax,alpha,beta)
-#   for i in range(map_height):
-#     for j in range(map_width): 
-#       if np.divide(invmod[i][j],np.subtract(1, invmod[i][j])) != 0 :
-#         Llocal[i][j] += np.log(np.divide(invmod[i][j],np.subtract(1, invmod[i][j])))
-#   localmap = np.exp(Llocal)/(1+np.exp(Llocal))
-#   return Llocal,localmap
 
 
 def get_range(map_matrix, X, meas_phi, rmax):

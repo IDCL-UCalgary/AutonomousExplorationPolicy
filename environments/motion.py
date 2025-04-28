@@ -1,7 +1,9 @@
-from queue import PriorityQueue
-from config import map_height, map_width
 import numpy as np
-from utils import check_free_or_occupied, move
+from queue import PriorityQueue
+from typing import List, Tuple, Union, Optional
+
+from environments.config import map_height, map_width
+from environments.utils.geometry_utils import move, check_free_or_occupied
 
 class MyGlobalplanner :
 	def __init__(self,start_point , goal_point , method='a'):
@@ -66,13 +68,6 @@ class MyGlobalplanner :
 		return points_in_path
 
 
-# def generate_exploration_path(x,findex,y_frontier,x_frontier,m):
-#     goal_point_coords = (x[0],x[1])
-#     start_point_coords = (y_frontier[findex],x_frontier[findex])
-#     Global_Path = MyGlobalplanner(start_point_coords,goal_point_coords,str('a'))
-#     Global_Path.find_global_path(m)
-#     generated_path = np.array(Global_Path.generate_path())
-#     return generated_path
 
 def generate_exploration_path(x,frontier,m):
 	goal_point_coords = (x[0],x[1])
