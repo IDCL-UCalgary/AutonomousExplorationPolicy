@@ -130,7 +130,7 @@ class Trainer:
                 #     action, x, m, localx, localy, pher_map
                 # )
 
-                next_state, reward, done, info = self.env.step(action, x, m, localx, localy, pher_map)
+                next_state, reward, done, info = self.env.step(state, action, x, m, localx, localy, pher_map)
         
                 x = info['robot_position']
                 m = info['map']

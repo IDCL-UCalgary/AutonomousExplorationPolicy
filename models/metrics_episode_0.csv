@@ -1,0 +1,2 @@
+episode_rewards,episode_lengths,episode_info_gain,episode_step_costs,episode_costs,episode_similarities,action_means,action_stds
+0.5813474411408728,12,3.032544378698225,1.225598468778676,1.336812408671323,0.9860853432282004,4.75,3.3942353090693835
