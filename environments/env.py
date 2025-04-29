@@ -74,8 +74,19 @@ class ExplorationEnv:
         self._localx = localx
         self._localy = localy
         self._pher_map = pher_map
+
+
+        info = {
+            'robot_position': x,
+            'map': m,
+            'path_x': localx,
+            'path_y': localy,
+            'pheromone_map': pher_map,
+        }
+
         
-        return state
+        
+        return state , info
 
     def step(self, action: int, x: np.ndarray = None, m: np.ndarray = None, 
              localx: List = None, localy: List = None, pher_map: np.ndarray = None) -> Tuple:
