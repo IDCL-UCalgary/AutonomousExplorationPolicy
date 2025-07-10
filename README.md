@@ -2,7 +2,13 @@
 This repository contains codes for novel intelligent and classical autonomous exploration policies, applicable to both single and multi-robot scenarios, along with a developed 2D simulation environment. The current version of the simulation environment includes modules for Exploration, Mapping, and Motion Planning, with the main focus on the Exploration module.<br />
 ![Autonomous Exploration Animation](images/Animation_3_Nonlearning_Exploration.gif)
 
-# Citing
+## Affiliations
+This repository was published during [Mohammad Hossein Sarfi](https://github.com/mohasarfi)'s MSc research in the [Intelligent Dynamics and Control Lab](https://ucalgary.ca/labs/intelligent-dynamics-control-lab), [Department of Mechanical and Manufacturing Engineering](https://schulich.ucalgary.ca/mechanical-manufacturing), Schulich School of Engineering, University of Calgary, under the supervision of [Dr. Mahdis Bisheban](https://profiles.ucalgary.ca/mahdis-bisheban). 
+
+The Lab is directed by Dr. Mahdis Bisheban. For more research and open-source contributions, please visit [IDCL Lab GitHub page](https://github.com/IDCL-UCalgary)
+
+
+## Citing
 Please cite our paper if you find this repository useful. You can find our open source paper here:
 https://rdcu.be/evJLn 
 
@@ -20,6 +26,7 @@ https://rdcu.be/evJLn
 # System Architecture 
 The general system architecture used for autonomous exploration and mapping in this repository is depicted in the following figure. The developed autonomous exploration policies, whether for single or multi-robot scenarios, are applied to the robot(s) through the task allocation module.
 ![System Architecture](images/SysArch.png)
+
 # Classical Collaborative Multi-Robot Autonomous Exploration Policies
 This repository introduces a novel coordinated autonomous exploration strategy inspired by Market-Based task allocation and Ant Colony Optimization techniques. This method integrates pheromone optimization into the utility function of the market-based task allocation module, reducing overlap between robots and improving efficiency.
 
@@ -49,18 +56,24 @@ point. More detailed technical information can be found in our paper.
 
 
 
-# To do 
+## Future Work
 - DRL-based multi robot autonomous exploration 
 - Robots dynamics 
 - Local motion planner 
 - Localization (Particle filter,Kalman filter)
 - Mapping (shift back to bayesian update)
-# References
+
+  
+## External Codebases and Inspirations
 Some of the current codes are inspired or developed by the following repositories: 
 - https://github.com/marload/DeepRL-TensorFlow2/tree/master
 - https://github.com/marload/DistRL-TensorFlow2
 - https://github.com/tsmatz/reinforcement-learning-tutorials/blob/master/06-sac.ipynb
 - https://github.com/BY571/IQN-and-Extensions
+  
+## Contributors
 
+- Mohammad Hossein Sarfi – MSc Student, Intelligent Dynamics and Control Lab, University of Calgary
+- Supervised by Dr. Mahdis Bisheban
 
 
