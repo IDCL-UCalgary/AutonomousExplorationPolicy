@@ -33,7 +33,19 @@ The following Figure shows the exploration path generated using different polici
 point. More detailed technical information can be found in our paper.
 ![Sample Trajectories](images/RL_Sample_Trajectory.png)
 
+# Citing
+If you this code, please cite the following publication:
 
+@article{IDCL2025JIRS,
+  title={Risk-Sensitive Autonomous Exploration of Unknown Environments: A Deep Reinforcement Learning Perspective},
+  author={Sarfi, Mohammad Hossein and Bisheban, Mahdis},
+  journal={Journal of Intelligent \& Robotic Systems},
+  volume={111},
+  number={1},
+  pages={36},
+  year={2025},
+  publisher={Springer}
+}
 
 # To do 
 - DRL-based multi robot autonomous exploration 
