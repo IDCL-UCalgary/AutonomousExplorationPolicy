@@ -70,7 +70,10 @@ Some of the current codes are inspired or developed by the following repositorie
 - https://github.com/marload/DistRL-TensorFlow2
 - https://github.com/tsmatz/reinforcement-learning-tutorials/blob/master/06-sac.ipynb
 - https://github.com/BY571/IQN-and-Extensions
-  
+
+## Funding Sources
+This work was supported by the Natural Sciences and Engineering Research Council of Canada (NSERC), the Government of Alberta, Alberta Innovates, and the Schulich School of Engineering at the University of Calgary. Funding was awarded to Dr. Mahdis Bisheban, Director of the Intelligent Dynamics and Control Lab (IDCL) and Assistant Professor at the University of Calgary.
+
 ## Contributors
 
 - Mohammad Hossein Sarfi – MSc Student, Intelligent Dynamics and Control Lab, University of Calgary
